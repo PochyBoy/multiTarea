@@ -4,7 +4,10 @@ function Yankepo(){
 
 const[juego, setJuego]=useState('')
 const[mensaje, setMensaje]=useState('')
-
+//siempre valores que se vayan a cambiar de valor se usa el useState
+//como este caso yo cometí el error de poner let mensaje, forzando el pintado
+//cuando no se podía, pero lo bueno es que ya fue solucionado
+//Agradecido con el de arriba y el profe uwu
 let computadora = ['Papel','Piedra','Tijera']
 
 let manoPc = computadora[Math.floor(Math.random() * computadora.length)]
